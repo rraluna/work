@@ -1,0 +1,307 @@
+<style>
+    .SUBSCRIBE-button {
+        background-color: rgb(200, 0, 0);
+        color: #fff;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        vertical-align: top;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+    }
+
+
+    /* только при наведение работвет  псевдокласс.псевдо класс добавляет дополнительные параментры */
+    .SUBSCRIBE-button:hover {
+        /* /* медленно исчезает */
+        opacity: 0.8;
+    }
+
+    /* при клике */
+    .SUBSCRIBE-button:active {
+        opacity: 0.5;
+    }
+
+    .JOIN-button {
+        background-color: #fff;
+        border-color: rgb(49, 102, 217);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(49, 102, 217);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 1s,
+            color 1s;
+
+    }
+
+    .JOIN-button:hover {
+        background-color: rgb(49, 102, 217);
+        color: #fff;
+    }
+
+    .JOIN-button:active {
+        opacity: 0.7;
+    }
+
+    .Tweet-button {
+        color: #fff;
+        background-color: rgb(22, 143, 255);
+        border: none;
+        border-radius: 18px;
+        height: 36px;
+        width: 75px;
+        margin-left: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    .Tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .Request-now-button {
+        color: #fff;
+        background-color: black;
+        border: none;
+        height: 36px;
+        width: 130px;
+        margin-left: 8px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        vertical-align: top;
+    }
+
+    .Request-now-button:hover {
+        background-color: wheat;
+        color: #000;
+    }
+
+    .Request-now-button:active {
+        opacity: 0.7;
+    }
+
+    .add-button {
+        color: black;
+        background-color: rgb(255, 216, 20);
+        border: none;
+        height: 36px;
+        width: 200px;
+        margin-left: 8px;
+        cursor: pointer;
+        border-radius: 18px;
+        font-size: 15px;
+        transition: transform 200ms cubic-bezier(.2, .8, .2, 1), box-shadow 200ms ease;
+        will-change: transform;
+        vertical-align: top;
+    }
+
+    .add-button:hover {
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s;
+        transform: translateY(-3px) scale(1.04);
+
+    }
+
+    .add-button:active {
+        transform: translateY(0) scale(0.99);
+        transition-duration: 120ms;
+
+    }
+
+    .sing-up-button {
+        color: seashell;
+        background-color: rgb(46, 164, 79);
+        border: none;
+        height: 36px;
+        width: 90px;
+        margin-left: 8px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .get-started-button {
+        color: #fff;
+        background-color: rgb(121, 82, 179);
+        border: none;
+        height: 36px;
+        width: 110px;
+        margin-left: 8px;
+        cursor: pointer;
+        border-radius: 2px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .get-started-button:hover {
+        transform: translateY(-10px) scale(2.04);
+    }
+
+
+    .download-button {
+        color: rgb(108, 117, 125);
+        background-color: #fff;
+        border-color: rgb(108, 117, 125);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        height: 36px;
+        width: 110px;
+        margin-left: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .apply-on-button {
+        color: #fff;
+        background-color: rgb(10, 102, 194);
+        border: none;
+        border-radius: 18px;
+        height: 36px;
+        width: 220px;
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        vertical-align: top;
+    }
+
+    .save-button {
+        color: rgb(10, 102, 194);
+        background-color: #fff;
+        border-color: rgb(10, 102, 194);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 18px;
+        height: 36px;
+        width: 80px;
+        font-size: 14px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .h1 {
+        color: rgb(0, 113, 133);
+    }
+
+    .h2 {
+        color: rgb(0, 0, 0);
+    }
+
+    .h3 {
+        color: rgb(0, 118, 0);
+    }
+
+    .add-to-cart-button {
+        color: #000;
+        background-color: rgb(255, 216, 20);
+        border: none;
+        height: 36px;
+        width: 150px;
+        border-radius: 18px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: rgb(255, 164, 28);
+
+    }
+
+    .buy-now-button {
+        color: #000;
+        background-color: rgb(255, 164, 28);
+        border: none;
+        height: 36px;
+        width: 150px;
+        border-radius: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 8px;
+    }
+
+    .buy-now-button:hover {
+        background-color: rgb(255, 216, 20);
+        ;
+    }
+</style>
+
+<button class="SUBSCRIBE-button">
+    SUBSCRIBE
+</button>
+
+<button class="JOIN-button">
+    JOIN
+</button>
+
+<button class="Tweet-button">
+    Tweet
+</button>
+
+<button class="Request-now-button">
+    Request now
+</button>
+
+<button class="add-button">
+    Add to cart
+</button>
+
+<button class="sing-up-button">
+    Sing up
+</button>
+
+<button class="get-started-button">
+    Get started
+</button>
+
+<button class="download-button">
+    Download
+</button>
+
+<button class="apply-on-button">
+    Apply on company website
+</button>
+
+<button class="save-button">
+    Save
+</button>
+
+<h1 class="h1">
+    back to amazon
+</h1>
+
+<h2 class="h2">
+    Nike Black Running Shoes
+</h2>
+
+<h3 class="h3">
+    39$ - in stock
+</h3>
+
+<p class="p1">
+    Free delivery tomorrow
+</p>
+
+<button class="add-to-cart-button">
+    Add to cart
+</button>
+
+<button class="buy-now-button">
+    Buy now
+</button>
